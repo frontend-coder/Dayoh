@@ -33,13 +33,6 @@ body {
 	line-height: 1.5;
 	position: relative;
 }
-
-h2 {font-size: 2.0em;
-	line-height: 1.6;
-	text-align: center;
-	margin-bottom: 60px;
-}
-
 .top-header {
 background: #000 url('../images/top-header.jpg') no-repeat;
 min-height:600px;
@@ -51,7 +44,7 @@ background-size: cover;
 position: relative;
 }
 
-/* .top-header:before 
+.top-header:before 
 {
 content:"";
 position: absolute;
@@ -59,12 +52,11 @@ top:0; left:0;
 width:100%;
 height:100%;
 background-color: rgba(0, 0, 0, 0.40);
-} */
+} 
 
 .header-text {
-	margin: 20% 0;color: #fff;
+margin: 20% 0;color: #fff;
 }
-
 .header-title {
 font-size: 3.750em;
 line-height: 1.8;
@@ -72,7 +64,6 @@ line-height: 1.8;
 .header-deskr {
 font-size: 1.250em;
 }
-
 .header-button {
 text-align: center;
 margin: 40px;
@@ -94,48 +85,41 @@ transition: all .25s linear;
 border-bottom: 2px solid #1367bc;
 box-shadow: 0 1px 2px 1px #0357ac;	
 }
-/* .header-pic {
-	position: relative;
-	padding-bottom: 0;
-	bottom: 0;
-
-} */
-
 .header-pic {
-	margin:180px auto 0 auto;
-
- padding-bottom: 0;
-	}
-
+max-width: 319px;
+margin:210px auto 0 auto;
+padding-bottom: 0;
+}
 .header-img {
 padding-bottom: 0;
-
 }
 .header-img img
 {
+text-align: center;
 max-width: 100%;
 height: auto;
 }
 
 .block-padd {
-	padding: 80px 0;
+padding: 80px 0;
 }
 
 /* 3 причины */
 .block-rision{
-	padding: 5px 3px 20px 3px;
-
+padding: 5px 3px 20px 3px;
 }
-
 .rision-ico {
 margin: 7px auto 35px auto;
-width: 55px;
-height: 55px;
+width: 100px;
+height: 100px;
+border-radius: 10em;
 text-align: center;
-line-height: 55px;
-border-radius: 50%; color: #e8776b;
-/* border-radius: 50%;
-border: 2px solid #eaeaea;  */
+border: 2px solid #000;
+line-height: 100px;
+}
+.rision-ico i {
+line-height: 100px;
+color: #e8776b;
 }
 
 .rision-title {
@@ -155,24 +139,23 @@ margin-bottom: 20px;
 }
 /*блок wells*/ 
 .block-wells {
-	padding: 30px 0;
-	background-color: #e8776b;
+padding: 30px 0;
+background-color: #e8776b;
 }
 
 .wells {
 margin-top: 10px;
-
 font-size: 1.500em;
 color: #fff;
 }
 
 .well-button {
-	padding-right: 5px;
+padding-right: 5px;
 }
 .well-button a {
-	text-align: center;
-	display: block;
-	font-size: .9em;
+text-align: center;
+display: block;
+font-size: .9em;
 	padding: 18px 25px;
 	color: #fff;
 	border:1px solid #fff;
@@ -188,11 +171,11 @@ transition: all .75s ease;
 
 .block-mac {
 background-color:#5e95cd;
-	}
-	.block-mac img {
-		width: 100%;
-		height: auto;
-	}
+}
+.block-mac img {
+width: 100%;
+height: auto;
+}
 
 .block-mac .rision-title, .block-mac .rision-text 
 {
@@ -201,11 +184,11 @@ background-color:#5e95cd;
 .block-mac .rision-title {
 margin: 0; }
 .block-mac .rision-text {
-	margin-top: 10px;}
+margin-top: 10px;}
 
 /* блок с ценами */
 .block-price .col-md-4 {
-	margin: 0; padding: 0;
+margin: 0; padding: 0;
 }
 .block-price {
 text-align: center;	
@@ -245,7 +228,7 @@ background-color: #eeeeee;
 .price-button a {
 	margin: 0 auto;
 	display: block;
-	  border-radius: 5px;
+  border-radius: 5px;
 	font-size: 1em;
 	width: 210px;
 	height: 50px;
@@ -266,9 +249,9 @@ background-color: #e84e3c;
 /* форма подписки */
 
 .block-sub {
-	padding: 30px 0 50px;
-	background: #000 url('../images/top-header.jpg') no-repeat;
-	-webkit-background-size: cover;
+padding: 30px 0 50px;
+background: #000 url('../images/top-header.jpg') no-repeat;
+-webkit-background-size: cover;
 -moz-background-size: cover;
 -ms-background-size: cover;
 -o-background-size: cover;
@@ -277,10 +260,6 @@ background-size: cover;
 .block-sub .wells {
 	text-align: center;
 }
-
-
-
-
 .form-calling {
 margin-top: 30px;
 font-size:.875em;
@@ -288,7 +267,6 @@ font-size:.875em;
 -moz-transition: all 0.5s else;
 transition: all 0.5s else;
 }
-
 
 .form-calling input, .form-calling .get-buttons{
 display:block;border-radius: 5px;
@@ -320,9 +298,6 @@ color: #fff;
 .form-calling .get-buttons:hover{
 background-color: #5e95cd;
 }
-
-
-
 
 /* начало оформления футера*/
 
@@ -357,13 +332,11 @@ transition:all 1.25s ease;
  }
 .social-icons ul li a:hover {
 color:#fff;
-
 border:2px solid #fff;
 -moz-transform:scale(1.2);
 -webkit-transform:scale(1.2);
 transform:scale(1.2);
 }
-
 
 /*стили кнопки наверх*/
 .top {
@@ -396,27 +369,3 @@ opacity: 1;
 .top.active {
 right: 30px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
