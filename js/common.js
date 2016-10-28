@@ -8,9 +8,7 @@ $(".top-menu").slideToggle();
 return false;
 });
 // одинаковой высоты разные по длине ашки
- $(".podrobne-text").equalHeights();
-
-
+ $("p.iner-text").equalHeights();
 
 //Кнопка наверх с права от контента
 $("body").append('<div class="top"><i class="fa fa-angle-double-up" aria-hidden="true"></i></div>');
@@ -37,6 +35,18 @@ if ($(this).scrollTop() > $(this).height()) {
 		scrollSpeed : 1000
 	});
 
+$(".owl-carousel").owlCarousel({
+		loop:true,
+		items: 1,
+		margin:130,
+		autoplay:true,
+	    autoplayTimeout:1500,
+	    autoplayHoverPause:true,
+		stagePadding: 130,
+		nav: true,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+		navContainer: '#customNav', 
+	});
 //Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
 
@@ -57,22 +67,4 @@ $("form").submit(function() { //Change
 		});
 		return false;
 	});
-
-
-
-
-
-	// //Кнопка "Наверх"
-	// //Документация:
-	// //http://api.jquery.com/scrolltop/
-	// //http://api.jquery.com/animate/
-	// $("#top").click(function () {
-	// 	$("body, html").animate({
-	// 		scrollTop: 0
-	// 	}, 800);
-	// 	return false;
-	// });
-	
-	
-
 });
