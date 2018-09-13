@@ -1,0 +1,68 @@
+@import '_var.scss';
+
+
+
+.top-header {
+  background-image:  url('../images/iPhone-5.png'),
+  url('../images/top-header.jpg');
+   min-height:600px;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 340px 423px, cover;
+  background-position: 70% bottom, top center;
+  position: relative;
+}
+
+.top-header:before {
+  content:"";
+  position: absolute;
+  top:0; left:0;
+  width:100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.40);
+}
+
+.header-text {
+  margin: 27% 0 16% 0;
+  color: #fff;
+}
+.header-title {
+  font-size: 3.750em;
+  line-height: 1.8;
+}
+.header-deskr {
+  font-size: 1.250em;
+  margin-bottom: 120px;
+}
+.header-button {
+  text-align: center;
+  margin: 0 40px;
+}
+.header-button a {
+  display: block;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  box-shadow: 0 1px 2px 1px #2377cc;
+  border-bottom: 2px solid #2377cc;
+  color: #fff;
+  background-color: #5e95cd;
+  transition: all .25s linear;
+}
+.header-button a:hover {
+  border-bottom: 2px solid #1367bc;
+  box-shadow: 0 1px 2px 1px #0357ac;
+}
+.header-pic {
+  max-width: 319px;
+  margin:210px auto 0 auto;
+  padding-bottom: 0;
+}
+.header-img {
+  padding-bottom: 0;
+}
+.header-img img
+{
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
