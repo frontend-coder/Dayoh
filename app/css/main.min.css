@@ -406,34 +406,38 @@ content: '\f095';
 
 /* 3 причины */
 .block-rision {
-  padding: 5px 3px 20px 3px; }
+  padding: 5px 5px 20px 5px; }
 
 .rision-ico {
   margin: 7px auto 35px auto;
+  padding: 0;
+  width: 100px;
+  height: 100px; }
+
+.rision-ico img {
   width: 100px;
   height: 100px;
   -webkit-border-radius: 10em;
           border-radius: 10em;
   text-align: center;
-  border: 2px solid #000;
-  line-height: 100px; }
-
-.rision-ico i {
-  line-height: 100px;
-  color: #e8776b; }
+  border: 2px solid #000; }
 
 .rision-title {
   font-size: 1.125em;
   text-align: center;
   font-weight: 600;
-  margin: 20px 0; }
+  margin: 20px 0 30px 0; }
 
 .rision-text {
-  font-size: 0.875em;
-  text-align: justify;
-  margin: 0 5px;
   color: #aaaaaa;
-  margin-bottom: 20px; }
+  font-family: "LatoLight", sans-serif; }
+
+.rision-text p {
+  font-family: "LatoLight", sans-serif;
+  font-size: 16px;
+  line-height: 1.375;
+  text-align: justify;
+  margin: 0 5px 20px 5px; }
 
 /*блок wells*/
 .block-wells {
@@ -509,6 +513,7 @@ content: '\f095';
   background-color: #eeeeee; }
 
 .price-w {
+  font-family: "LatoLight", sans-serif;
   color: #999999;
   font-size: 0.8em;
   padding: 20px 0; }
@@ -546,8 +551,7 @@ content: '\f095';
   padding: 30px 0 50px;
   background: #000 url("../images/top-header.jpg") no-repeat;
   -webkit-background-size: cover;
-  -ms-background-size: cover;
-  background-size: cover; }
+          background-size: cover; }
 
 .block-sub .wells {
   text-align: center; }
@@ -559,7 +563,9 @@ content: '\f095';
   -o-transition: all 0.5s else;
   transition: all 0.5s else; }
 
-.form-calling input, .form-calling .get-buttons {
+.form-calling input,
+.form-calling .get-buttons {
+  font-family: "LatoRegular", sans-serif;
   display: block;
   -webkit-border-radius: 5px;
           border-radius: 5px;
@@ -579,14 +585,15 @@ content: '\f095';
 
 .form-calling input:hover {
   background-color: #aaaaaa;
-  color: #fff; }
+  color: #000; }
 
 .form-calling .get-buttons {
-  width: 50%;
+  width: 90%;
   line-height: 0;
   background-color: #3581cc;
   text-align: center;
-  color: #fff; }
+  color: #fff;
+  cursor: pointer; }
 
 .form-calling .get-buttons:hover {
   background-color: #5e95cd; }
@@ -617,8 +624,8 @@ content: '\f095';
   text-align: center;
   font-size: 1em;
   border: 2px solid #fff;
-  -o-transition: all 1.25s ease;
   -webkit-transition: all 1.25s ease;
+  -o-transition: all 1.25s ease;
   transition: all 1.25s ease; }
 
 .social-icons ul li a:hover {
@@ -657,6 +664,10 @@ content: '\f095';
 .top.active {
   right: 30px; }
 
+/*  слайдер с отзывами    */
+.block-one-example {
+  margin: 30px 0; }
+
 /* слайдер */
 .owl-carousel .owl-dots .owl-dot.active
 span {
@@ -665,10 +676,6 @@ span {
 .owl-carousel .owl-dots .owl-dot:hover
 span {
   background-color: red; }
-
-.block-one-example {
-  margin: 30px 0;
-  position: relative; }
 
 .block-items {
   cursor: default; }
@@ -693,7 +700,6 @@ span {
 h3.order-name {
   padding: 10px 0;
   font-size: 20px;
-  font-family: "Roboto", sans-serif;
   font-weight: 900; }
 
 p.iner-text {
@@ -701,7 +707,8 @@ p.iner-text {
   margin-left: 220px;
   padding: 15px 0 25px;
   font-size: 1.1em;
-  font-weight: 300; }
+  font-weight: 300;
+  font-family: "LatoLight", sans-serif; }
 
 /*Изменяем внешний вид элементов управления (точки) */
 .owl-controls {
@@ -755,6 +762,216 @@ p.iner-text {
 .owl-my-nav .owl-next {
   right: 50px;
   text-align: right; }
+
+.forms-calldecor input {
+  height: 40px;
+  line-height: 40px; }
+
+.forms-calldecor textarea {
+  height: 100px; }
+
+.forms-calldecor .button-call .get-buttons {
+  margin-top: 10px;
+  line-height: 1; }
+
+.forms-call .get-buttons {
+  margin-top: 50px;
+  padding: 10px 50px;
+  /* 	line-height: 50px; */
+  font-size: 18px;
+  border: 1px solid #DC143C;
+  text-decoration: none;
+  background-color: #DC143C;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  color: #fff; }
+
+.button-call {
+  text-align: center;
+  margin: 0; }
+
+.forms-call .get-buttons:focus,
+.forms-call .get-buttons:hover,
+.forms-call .get-buttons:active {
+  background-color: transparent;
+  border: 1px solid #DC143C;
+  color: #DC143C; }
+
+/* конец формы обратной связи */
+/*оформление всплывающей формы а ниже и благодарности */
+.forms-calldecor {
+  max-width: 480px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s else;
+  -o-transition: all 0.5s else;
+  transition: all 0.5s else;
+  overflow: hidden;
+  margin: auto;
+  border: 1px solid #fff;
+  -webkit-border-radius: 1em;
+          border-radius: 1em; }
+
+.forms-calldecor h4, .forms-calldecor h5 {
+  color: #fff;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 50px 20px 0; }
+
+.forms-calldecor h5 {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 0.96em;
+  letter-spacing: 1px; }
+
+.formscalldecor_input {
+  display: block;
+  border: none;
+  text-indent: 10px;
+  width: 90%;
+  margin: 0 auto 10px;
+  background-color: #fff;
+  color: #aaaaaa;
+  outline: none; }
+
+.formscalldecor_input:hover {
+  background-color: #aaaaaa;
+  color: #000; }
+
+.formscalldecor_input:focus {
+  background-color: #ffffff !important;
+  color: #aaaaaa; }
+
+.formscalldecor_input:focus-within {
+  background-color: #ffffff !important;
+  color: #aaaaaa; }
+
+.formscalldecor_input:visited {
+  background-color: #ffffff !important;
+  color: #aaaaaa; }
+
+.formscalldecor_input:-webkit-autofill {
+  -webkit-box-shadow: inset 0 0 0 50px #ffffff !important;
+  /* Цвет фона */
+  -webkit-text-fill-color: #aaaaaa !important;
+  /* цвет текста */
+  color: #aaaaaa !important;
+  /* цвет текста */ }
+
+.forms-calldecor .button-call {
+  float: none;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 40px; }
+
+.forms-calldecor .button-call .get-buttons {
+  display: block;
+  border: none;
+  cursor: pointer;
+  margin: 0 auto;
+  width: 210px;
+  height: 40px;
+  line-height: 40px;
+  -webkit-box-shadow: 0 1px 2px 1px #2377cc;
+          box-shadow: 0 1px 2px 1px #2377cc;
+  border-bottom: 2px solid #2377cc;
+  color: #fff;
+  background-color: #5e95cd;
+  -webkit-transition: all .25s linear;
+  -o-transition: all .25s linear;
+  transition: all .25s linear; }
+
+.forms-calldecor .button-call .get-buttons:hover {
+  border-bottom: 2px solid #1367bc;
+  -webkit-box-shadow: 0 1px 2px 1px #0357ac;
+          box-shadow: 0 1px 2px 1px #0357ac; }
+
+.forms-calldecor .mfp-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px; }
+
+.forms-calldecor .mfp-close-btn-in .mfp-close {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+  -webkit-border-radius: 3px;
+          border-radius: 3px; }
+
+.mfp-close-btn-in .mfp-close {
+  color: #ffffff; }
+
+.forms-calldecor .success {
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  padding-right: 20px;
+  padding-left: 20px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+.forms-calldecor .success.active {
+  top: 0;
+  opacity: 1; }
+
+.forms-calldecor .success p {
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  margin: auto;
+  text-align: center; }
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8; }
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0; }
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+  left: 100%;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  left: 0; }
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  left: 100%; }
 
 /* // задать все переменные
  */

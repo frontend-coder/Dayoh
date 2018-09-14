@@ -22,7 +22,13 @@ $("a[href='#call-back']").click(function(){
 	$(".forms-call [name=admin-data]").val(dataForm);
 });
 
+$('.owl-carousel').owlCarousel({
+    loop   : true,
+    margin : 10,
+    nav    : false,
+    items  : 1
 
+})
 //Ajax push mesege http://api.jquery.com/jquery.ajax/
 
 $("form").submit(function() { //Change

@@ -85,8 +85,7 @@ gulp.task('scripts', function () {
 'app/libs/nicescroll/jquery.nicescroll.min.js',
 'app/libs/jQuery-Mask/jquery.mask.min.js',
 'app/libs/magnific-popup/jquery.magnific-popup.min.js',
-'app/libs/jquery.PageScroll2id/jquery.PageScroll2id.min.js',
-'app/libs/owlcarousel/owl.carousel.min.js',
+'app/libs/OwlCarousel2/dist/owl.carousel.min.js',
 
 'app/libs/jquery/common.js'
    ])
