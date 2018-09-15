@@ -9,8 +9,18 @@ $(function() {
 
 // всплывающие окна обратной связи позвонить мне
 $("a[href='#call-back']").magnificPopup ({
-	mainClass:'mfp-fade',
+	mainClass:'mfp-with-fade',
+	  callbacks: {
+    beforeClose: function() {
+        this.content.addClass('hinge');
+    },
+    close: function() {
+        this.content.removeClass('hinge');
+    }
+  },
+  midClick: true,
 	removalDelay:400,
+	tClose          : 'Закрыть (Esc)',
 	type:'inline'
 });
 
@@ -27,10 +37,8 @@ $('.owl-carousel').owlCarousel({
     margin : 10,
     nav    : false,
     items  : 1
-
-})
+});
 //Ajax push mesege http://api.jquery.com/jquery.ajax/
-
 $("form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
@@ -49,7 +57,4 @@ $("form").submit(function() { //Change
 		return false;
 	});
 //castom code
-
-
-
 });

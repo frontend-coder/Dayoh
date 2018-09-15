@@ -16,4 +16,26 @@ HTML5 шаблон Dayoh
 слайдера клиентов с фотографиями
 блока с простой формой заказа звонка
 подвала с социальным блоком
-Страница шаблона —  https://frontend-coder.github.io/portfolio/micro/dayoh/
+
+Оптимизация под мобильные устройства выполнена по таким точкам излома:
+
+1680px
+1280px
+1080px
+1024px
+ 800px
+ 768px
+ 600px
+ 480px
+
+
+Связаться с автором шаблона:
+Facebook: https://www.facebook.com/frontendercode
+GitHab: https://github.com/frontend-coder
+Skype : webrabcom
+Telegram : https://t.me/frontendcoder
+
+
+Демо страницы —  https://frontend-coder.github.io/portfolio/micro/dayoh/
+Портфолио:   https://github.com/frontend-coder
+

@@ -31,6 +31,10 @@
 @media only screen and (max-width : 1440px) {
 
 }
+/*важное разрешение 1280 */
+@media only screen and (max-width : 1280px) {
+
+}
 
 @media only screen and (max-width : 1200px) {
 
@@ -40,12 +44,17 @@
 
 }
 
+/*важное разрешение 1080*/
 @media screen and (max-width: 1080px) {
-
+.top-header {
+    background-position: 88% bottom, top center}
 }
-/* первое разрешение под казачика */
-@media only screen and (max-width: 1024px) {
 
+/*важное разрешение 1024 */
+@media only screen and (max-width: 1024px) {
+.block-mac .rision-text {
+   margin-left: 10px;
+}
 
 }
 
@@ -53,141 +62,21 @@
 @media only screen and (max-width: 992px) {
 
 }
-
+/*важное разрешение 800 */
 @media only screen and (max-width: 800px) {
-
-
+.header-text { margin: 9% 0 39% 0;}
+.wells { text-align: center;   margin-bottom: 20px;}
+.well-button {text-align: center;}
+.well-button a { display: inline-block; padding: 18px 35px;}
+.block-mac .rision-title {margin-top: 20px;}
+.price { margin-bottom: 20px;}
+p.iner-text {padding: 0; margin-left: 200px;font-size: 1.0em;}
+.owl-theme .owl-nav.disabled + .owl-dots {margin-top: 0px;}
 }
-
+/*важное разрешение 768 */
 @media only screen and (max-width: 768px) {
-.mobile_gamburger {
-  display: block;
-}
-.top_line_menu {
-        display: none;
-        }
-.header_content_item {
-        width: 100%;
-
-        float: none;
-      }
-      .header_img:before {
-display: none;
-
-      }
-      .header_content_item:last-child {
-        width: 100%;
-      }
-/*конец оформления кнопки  меню*/
-.top_mnu {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color:rgba(40, 40, 38, 0.80);
-  z-index:50;
-  right: 0;
-  top: -100%;
-/* display: flex;
-justify-content: center;
-align-items: center; */
-}
-/* .top_mnu.active {
-top: 0;
-} */
-.top_mnu ul {
-  /*   margin-top: 120px; */
-  text-align: center;
-  width: 100%;
-}
-.top_mnu ul li {
-  margin: 0;
-  padding: 0;
-}
-
-.top_mnu ul li a{
-  display: block;
-  font-family: "RobotoMedium", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.2;
-  padding:20px;
-  color:#fff;
-
-  text-transform: uppercase;
-  @include trans;
-}
-
-.top_mnu ul li a:hover{
-  background-color:rgba(#fff, 0.40);
-  color:$color_button;
-}
 
 
-
-/*оформление скрытого меню*/
-.hidden-mnu {
-  background-color: rgba(#000, .7);
-
-  display: none;
-  min-width:100%;
-  position:absolute;
-  left:0;
-  top: 0;
-  z-index:1;
-}
-.hidden-mnu ul {
-  margin: 0;
-  padding: 0;
-}
-.hidden-mnu ul li {
-  display:block;
-  margin: 0;
-  padding: 0;
-}
-.hidden-mnu ul li a{
-  display: block;
-  text-align: center;
-  font-size: 1.6rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  line-height: 1.5;
-  padding:20px 0;
-  color:#fff;
-  @include trans;
-}
-
-.hidden-mnu ul li a:hover{
-  /* background-color:rgba(40, 40, 38, 0.60); */
-  color:$color_button;
-
-}
-
-
-.top_line_box, .top_line {
-  height: 80px;
-}
-
-/*Disable Animation on Mobile Devices*/
-.animated {
-  /*CSS transitions*/
-  -o-transition-property: none !important;
-  -moz-transition-property: none !important;
-  -ms-transition-property: none !important;
-  -webkit-transition-property: none !important;
-  transition-property: none !important;
-  /*CSS transforms*/
-  -o-transform: none !important;
-  -moz-transform: none !important;
-  -ms-transform: none !important;
-  -webkit-transform: none !important;
-  transform: none !important;
-  /*CSS animations*/
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-}
 
 }
 /* end  (max-width: 768px) */
@@ -196,92 +85,78 @@ top: 0;
 }
 
 @media only screen and (max-width: 736px) {
-
-
-
 }
 
 @media only screen and (max-width: 734px) {
-
-
-
 }
 
 @media only screen and (max-width: 684px) {
-
-
-
 }
 
 @media only screen and (max-width: 667px) {
-
-
-
 }
 
 @media only screen and (max-width: 640px) {
-
-
-
-
 }
 
+/*важное разрешение 600 */
 @media only screen and (max-width: 600px) {
-
-
-
+.header-button {margin: 0 4px;}
+.header-text { margin: 9% 0 50% 0;}
+.top-header {background-position: 94% bottom, top center;}
+.header-deskr {font-size: 1.07em;}
+.block-padd {padding: 40px 0;}
 }
 
 @media only screen and (max-width: 568px) {
-
-
-
 }
 
+/*важное разрешение 480 */
 @media only screen and (max-width: 480px) {
+.top-header {min-height: 520px;background-size: 227px 282px, cover;}
+.header-deskr {font-size: 1.250em;margin-bottom: 49px;}
+.header-deskr {font-size: 1.15em;}
+.rision-title { margin: 10px 0 20px 0;}
+.rision-ico {margin: 7px auto 20px auto;}
+.wells {font-size: 1.4500em;}
+.well-button a {font-size: 1.00em; padding: 11px 35px;}
+    .inner-test > img {float: none;margin:0 auto;}
+p.iner-text {padding: 0;margin-left: 0;}
+.block-one-example {margin: 0 0 30px 0;}
+.form-calling {margin-top: 0px;}
+.forms-calldecor {max-width: 460px;}
+.forms-calldecor h5 {margin-bottom: 18px;}
+.forms-calldecor input {height: 35px;line-height: 35px;}
+
+
+
+
+
+
+
+
 
 
 
 }
 
 @media only screen and (max-width: 425px) {
-
-
-
 }
 
 @media only screen and (max-width: 414px) {
-
-
-
 }
 
 @media only screen and (max-width: 412px) {
-
-
-
 }
 
 @media only screen and (max-width: 384px) {
-
-
-
 }
 
 @media only screen and (max-width: 375px) {
-
-
-
 }
 
 @media only screen and (max-width: 360px) {
-
-
-
 }
 
 @media only screen and (max-width: 320px) {
-
-
-
 }
